@@ -1,0 +1,31 @@
+create database consultas;
+
+create table usuarios(
+  id SERIAL PRIMARY KEY,
+  nome TEXT NOT NULL,
+  email TEXT UNIQUE NOT NULL,
+  senha TEXT NOT NULL
+);
+
+create table clientes(
+  id SERIAL PRIMARY KEY,
+  nome TEXT NOT NULL,
+  email TEXT,
+  telefone TEXT NOT NULL,
+  idade INT NOT NULL,
+  endereço TEXT NOT NULL
+);
+
+create table agendamentos(
+  id  SERIAL PRIMARY KEY,
+  dia DATE NOT NULL,
+  hora TIME NOT NULL
+);
+ 
+ create table atendidos(
+  id SERIAL PRIMARY KEY,
+  dia_atendimento DATE NOT NULL,
+  descricao_atendimento TEXT NOT NULL,
+  valor_avaliacao INT NOT NULL,
+  valor_sessao INT NOT NULL
+);
