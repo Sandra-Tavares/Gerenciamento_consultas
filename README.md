@@ -8,6 +8,7 @@ Em desenvolvimento
 
 3 - criar pasta src;
 
-4 - criar arquvo index;
+4 - criar arquivo index;
 
-5 - criar arquivo de rotas;
+instalação das bibliotecas express, pg, bcrypt,
+5 - Criação endpoint cadastro de usuario;
